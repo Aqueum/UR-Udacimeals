@@ -3,9 +3,6 @@ import { connect } from 'react-redux';
 import { addRecipe, removeFromCalendar } from '../actions';
 
 class App extends Component {
-  doThing = () => {
-    this.props.selectRecipe({});
-  };
   render() {
     console.log('Props', this.props);
     return <div>Hello World</div>;
