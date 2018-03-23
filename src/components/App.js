@@ -18,6 +18,16 @@ class App extends Component {
             </li>
           ))}
         </ul>
+
+        <div className="calendar">
+          <div className="days">
+            {calendar.map(({ day }) => (
+              <h3 key={day} className="subheader">
+                {capitalize(day)}
+              </h3>
+            ))}
+          </div>
+        </div>
       </div>
     );
   }
