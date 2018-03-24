@@ -53,7 +53,7 @@ class App extends Component {
   openIngredientsModal = () =>
     this.setState(() => ({ ingredientsModalOpen: true }));
   closeIngredientsModal = () =>
-    this.setState(() => ({ ingrediantsModalOpen: false }));
+    this.setState(() => ({ ingredientsModalOpen: false }));
   generateShoppingList = () => {
     return this.props.calendar
       .reduce((result, { meals }) => {
@@ -65,7 +65,7 @@ class App extends Component {
 
         return result;
       }, [])
-      .reduce((ings, { ingrediantLines }) => ings.concat(ingrediantLines), []);
+      .reduce((ings, { ingredientLines }) => ings.concat(ingredientLines), []);
   };
   render() {
     const {
